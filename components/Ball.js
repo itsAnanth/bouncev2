@@ -20,8 +20,7 @@ class Ball {
 
     /**
      * applies verlet integration
-     * x(n + 1) = 2 * x(n) - x(n - 1) + accel * delta(t)
-     * x(n + 1) = x(n) + (x(n) - x(n - 1)) * forces + a * (delta(t)) ^ 2
+     * x(n + 1) = x(n) + (x(n) - x(n - 1)) * forces + accel * (delta(t)) ^ 2
      */ 
     verlet(delta) {
         // let nextX = (this.pos.x * 2) - this.previous.x; // mult with delta is already done in force()
