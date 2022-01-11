@@ -41,7 +41,7 @@ class Ball {
      * @param {CanvasRenderingContext2D} ctx 
      */
     render(ctx) {
-        ctx.fillStyle = 'rgba(27,155,244,0.3)';
+        ctx.fillStyle = this.color;
         ctx.beginPath();
         ctx.arc(this.pos.x, this.pos.y, this.radius, 0, 2 * Math.PI);
         ctx.fill();
