@@ -15,9 +15,19 @@ class World {
             entitiy.force(0, VAR_GRAVITY);
             entitiy.verlet(VAR_DELTA);
             entitiy.checkWall();
+            this.colission(entitiy, i);
             entitiy.render(ctx);
         }
         requestAnimationFrame(this.render.bind(this))
+    }
+
+    /**
+     * 
+     * @param {Ball} ball 
+     * @param {number} index 
+     */
+    colission(ball, index) {
+        // WIP
     }
 
     /**
