@@ -10,6 +10,8 @@ class Vector {
     }
 
     static distance(v1, v2) {
-        return Math.sqrt(Math.pow(v1, 2) + Math.pow(v2, 2));
+        const dx = v1.x - v2.x;
+        const dy = v1.y - v2.y;
+        return Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
     }
 }
